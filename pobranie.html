@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pobierz pliki</title>
+  <style>
+    .download-text {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="download-text" onclick="downloadFiles()">Kliknij tutaj, aby pobrać pliki</p>
+
+  <script>
+    function downloadFiles() {
+      const files = ['patej_2k_g2', 'podstrona_patej_2K_g2_23_05_2025', 'spr_patej_2K_g2_23_05_2025']; // Zmień na własne nazwy plików
+
+      files.forEach(file => {
+        const a = document.createElement('a');
+        a.href = file;
+        a.download = '';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      });
+    }
+  </script>
+
+</body>
+</html>

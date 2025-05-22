@@ -1,0 +1,25 @@
+.szary-div {
+    background-color: gray;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    border: 1px solid black;
+}
+
+#podkreslony_patej {
+    color: #00FF00;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#pochylona_patej {
+    color: rgb(100%, 0%, 0%);
+    font-size: 0.25in;
+    font-style: italic;
+}
+
+#pogrubienie_patej {
+    color: rgb(0, 0, 255);
+    font-size: 0.75cm;
+    font-weight: bold;
+}
